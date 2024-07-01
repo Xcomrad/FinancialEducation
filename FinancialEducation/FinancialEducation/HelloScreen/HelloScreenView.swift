@@ -3,6 +3,8 @@ import UIKit
 
 class HelloScreenView: UIView {
     
+    var completionGoToMain: (()->())?
+    
     private lazy var titleLabel: UILabel = {
        let label = UILabel()
         label.text = "Улучшайте ваши знания о финансовом мире: \n Проходите тесты, Решайте задачи, Делайте заметки."
@@ -45,7 +47,7 @@ class HelloScreenView: UIView {
     
     // MARK: Action
     @objc func openMainScreen() {
-        
+        completionGoToMain?()
     }
 }
 

@@ -79,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				26531C8D2C32AA78001B78C2 /* App */,
+				26531CF02C3306D5001B78C2 /* State */,
 				26531C9D2C32AD60001B78C2 /* LoadScreen */,
 				26531CA02C32AD7E001B78C2 /* HelloScreen */,
 				26531C932C32ACD1001B78C2 /* TabBar */,
@@ -185,6 +186,13 @@
 				26531CD82C32D4E1001B78C2 /* LoadingCircle.swift */,
 			);
 			path = Animate;
+			sourceTree = "<group>";
+		};
+		26531CF02C3306D5001B78C2 /* State */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = State;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
