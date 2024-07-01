@@ -1,5 +1,6 @@
 
 import UIKit
+import SnapKit
 
 final class MainTabBarController: UITabBarController {
     
@@ -25,8 +26,8 @@ final class MainTabBarController: UITabBarController {
     
     private func setupStyle() {
         tabBar.backgroundColor = .darkGray
-        tabBar.tintColor = .systemOrange
-        tabBar.unselectedItemTintColor = .white
+        tabBar.tintColor = .tupColor
+        tabBar.unselectedItemTintColor = .textColor
         tabBar.layer.borderWidth = 1.5
         tabBar.layer.cornerRadius = 20
         tabBar.layer.borderColor = UIColor.gray.cgColor
