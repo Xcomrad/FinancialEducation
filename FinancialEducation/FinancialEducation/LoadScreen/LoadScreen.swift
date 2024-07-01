@@ -1,7 +1,7 @@
 
 import UIKit
 
-class LoadScreen: UIViewController {
+final class LoadScreen: UIViewController {
     
     private let rootView = LoadScreenView()
     
@@ -13,11 +13,16 @@ class LoadScreen: UIViewController {
         super.viewDidLoad()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            var controller = HelloScreen()
-            var window = UIWindow.init(frame: UIScreen.main.bounds)
-            window.rootViewController = controller
-            window.makeKeyAndVisible()
-            
+            UIApplication.shared.connectedScenes
+                .compactMap { ( $0 as? UIWindowScene) }
+                .forEach { windowScene in
+                    windowScene.windows.forEach { window in
+                        _ = window.rootViewController
+                        UIView.transition(with: window, duration: 0.7, options: .transitionCrossDissolve, animations: {
+                            window.rootViewController = HelloScreen() })
+                        
+                    }
+                }
         }
     }
 }

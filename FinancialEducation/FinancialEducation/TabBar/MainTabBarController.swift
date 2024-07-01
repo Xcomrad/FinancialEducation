@@ -25,12 +25,12 @@ final class MainTabBarController: UITabBarController {
     }
     
     private func setupStyle() {
-        tabBar.backgroundColor = .darkGray
+        tabBar.backgroundColor = .darckColor
         tabBar.tintColor = .tupColor
         tabBar.unselectedItemTintColor = .textColor
-        tabBar.layer.borderWidth = 1.5
+        tabBar.layer.borderWidth = 1
         tabBar.layer.cornerRadius = 20
-        tabBar.layer.borderColor = UIColor.gray.cgColor
+        tabBar.layer.borderColor = UIColor.darckColor.cgColor
         tabBar.clipsToBounds = true
     }
 }
