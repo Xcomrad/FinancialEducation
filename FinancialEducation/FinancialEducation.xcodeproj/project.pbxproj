@@ -21,6 +21,9 @@
 		26531CA22C32AFB2001B78C2 /* CourseScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531CA12C32AFB2001B78C2 /* CourseScreenView.swift */; };
 		26531CA42C32AFC2001B78C2 /* QuizzesScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531CA32C32AFC2001B78C2 /* QuizzesScreenView.swift */; };
 		26531CA62C32AFD0001B78C2 /* SettiongsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531CA52C32AFD0001B78C2 /* SettiongsScreenView.swift */; };
+		26531CAC2C32B813001B78C2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531CAB2C32B813001B78C2 /* UIColor.swift */; };
+		26531CAF2C32BE65001B78C2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 26531CAE2C32BE65001B78C2 /* SnapKit */; };
+		26531CD92C32D4E2001B78C2 /* LoadingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531CD82C32D4E1001B78C2 /* LoadingCircle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,8 @@
 		26531CA12C32AFB2001B78C2 /* CourseScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseScreenView.swift; sourceTree = "<group>"; };
 		26531CA32C32AFC2001B78C2 /* QuizzesScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzesScreenView.swift; sourceTree = "<group>"; };
 		26531CA52C32AFD0001B78C2 /* SettiongsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettiongsScreenView.swift; sourceTree = "<group>"; };
+		26531CAB2C32B813001B78C2 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		26531CD82C32D4E1001B78C2 /* LoadingCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCircle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26531CAF2C32BE65001B78C2 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +82,8 @@
 				26531C9D2C32AD60001B78C2 /* LoadScreen */,
 				26531CA02C32AD7E001B78C2 /* HelloScreen */,
 				26531C932C32ACD1001B78C2 /* TabBar */,
+				26531CDA2C32E198001B78C2 /* Animate */,
+				26531CAA2C32B7FB001B78C2 /* Extensions */,
 				26531C8E2C32AAA6001B78C2 /* Resources */,
 			);
 			path = FinancialEducation;
@@ -163,6 +171,22 @@
 			path = SettingsScreen;
 			sourceTree = "<group>";
 		};
+		26531CAA2C32B7FB001B78C2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				26531CAB2C32B813001B78C2 /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		26531CDA2C32E198001B78C2 /* Animate */ = {
+			isa = PBXGroup;
+			children = (
+				26531CD82C32D4E1001B78C2 /* LoadingCircle.swift */,
+			);
+			path = Animate;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,6 +203,9 @@
 			dependencies = (
 			);
 			name = FinancialEducation;
+			packageProductDependencies = (
+				26531CAE2C32BE65001B78C2 /* SnapKit */,
+			);
 			productName = FinancialEducation;
 			productReference = 26531C762C32A987001B78C2 /* FinancialEducation.app */;
 			productType = "com.apple.product-type.application";
@@ -207,6 +234,9 @@
 				Base,
 			);
 			mainGroup = 26531C6D2C32A987001B78C2;
+			packageReferences = (
+				26531CAD2C32BE65001B78C2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 26531C772C32A987001B78C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26531CA22C32AFB2001B78C2 /* CourseScreenView.swift in Sources */,
+				26531CAC2C32B813001B78C2 /* UIColor.swift in Sources */,
 				26531C9A2C32AD24001B78C2 /* SettingsScreen.swift in Sources */,
 				26531C962C32ACF1001B78C2 /* CoursesScreen.swift in Sources */,
 				26531C7E2C32A987001B78C2 /* MainTabBarController.swift in Sources */,
@@ -241,6 +272,7 @@
 				26531C7A2C32A987001B78C2 /* AppDelegate.swift in Sources */,
 				26531C922C32ACC6001B78C2 /* HelloScreen.swift in Sources */,
 				26531C7C2C32A987001B78C2 /* SceneDelegate.swift in Sources */,
+				26531CD92C32D4E2001B78C2 /* LoadingCircle.swift in Sources */,
 				26531CA62C32AFD0001B78C2 /* SettiongsScreenView.swift in Sources */,
 				26531C9C2C32AD5B001B78C2 /* LoadScreenView.swift in Sources */,
 				26531C902C32AC92001B78C2 /* LoadScreen.swift in Sources */,
@@ -446,6 +478,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		26531CAD2C32BE65001B78C2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		26531CAE2C32BE65001B78C2 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26531CAD2C32BE65001B78C2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 26531C6E2C32A987001B78C2 /* Project object */;
 }

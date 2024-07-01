@@ -11,5 +11,14 @@ class LoadScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            var controller = HelloScreen()
+            var window = UIWindow.init(frame: UIScreen.main.bounds)
+            window.rootViewController = controller
+            window.makeKeyAndVisible()
+            
+        }
     }
 }
+
