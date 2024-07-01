@@ -9,17 +9,37 @@
 /* Begin PBXBuildFile section */
 		26531C7A2C32A987001B78C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531C792C32A987001B78C2 /* AppDelegate.swift */; };
 		26531C7C2C32A987001B78C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531C7B2C32A987001B78C2 /* SceneDelegate.swift */; };
-		26531C7E2C32A987001B78C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531C7D2C32A987001B78C2 /* ViewController.swift */; };
+		26531C7E2C32A987001B78C2 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531C7D2C32A987001B78C2 /* MainTabBarController.swift */; };
 		26531C832C32A98A001B78C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26531C822C32A98A001B78C2 /* Assets.xcassets */; };
+		26531C902C32AC92001B78C2 /* LoadScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531C8F2C32AC92001B78C2 /* LoadScreen.swift */; };
+		26531C922C32ACC6001B78C2 /* HelloScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531C912C32ACC6001B78C2 /* HelloScreen.swift */; };
+		26531C962C32ACF1001B78C2 /* CoursesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531C952C32ACF1001B78C2 /* CoursesScreen.swift */; };
+		26531C982C32AD04001B78C2 /* QuizzesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531C972C32AD04001B78C2 /* QuizzesScreen.swift */; };
+		26531C9A2C32AD24001B78C2 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531C992C32AD24001B78C2 /* SettingsScreen.swift */; };
+		26531C9C2C32AD5B001B78C2 /* LoadScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531C9B2C32AD5B001B78C2 /* LoadScreenView.swift */; };
+		26531C9F2C32AD75001B78C2 /* HelloScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531C9E2C32AD75001B78C2 /* HelloScreenView.swift */; };
+		26531CA22C32AFB2001B78C2 /* CourseScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531CA12C32AFB2001B78C2 /* CourseScreenView.swift */; };
+		26531CA42C32AFC2001B78C2 /* QuizzesScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531CA32C32AFC2001B78C2 /* QuizzesScreenView.swift */; };
+		26531CA62C32AFD0001B78C2 /* SettiongsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531CA52C32AFD0001B78C2 /* SettiongsScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26531C762C32A987001B78C2 /* FinancialEducation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancialEducation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26531C792C32A987001B78C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26531C7B2C32A987001B78C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		26531C7D2C32A987001B78C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		26531C7D2C32A987001B78C2 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		26531C822C32A98A001B78C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26531C872C32A98A001B78C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26531C8F2C32AC92001B78C2 /* LoadScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadScreen.swift; sourceTree = "<group>"; };
+		26531C912C32ACC6001B78C2 /* HelloScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloScreen.swift; sourceTree = "<group>"; };
+		26531C952C32ACF1001B78C2 /* CoursesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesScreen.swift; sourceTree = "<group>"; };
+		26531C972C32AD04001B78C2 /* QuizzesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzesScreen.swift; sourceTree = "<group>"; };
+		26531C992C32AD24001B78C2 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		26531C9B2C32AD5B001B78C2 /* LoadScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadScreenView.swift; sourceTree = "<group>"; };
+		26531C9E2C32AD75001B78C2 /* HelloScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloScreenView.swift; sourceTree = "<group>"; };
+		26531CA12C32AFB2001B78C2 /* CourseScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseScreenView.swift; sourceTree = "<group>"; };
+		26531CA32C32AFC2001B78C2 /* QuizzesScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzesScreenView.swift; sourceTree = "<group>"; };
+		26531CA52C32AFD0001B78C2 /* SettiongsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettiongsScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +73,9 @@
 			isa = PBXGroup;
 			children = (
 				26531C8D2C32AA78001B78C2 /* App */,
-				26531C7D2C32A987001B78C2 /* ViewController.swift */,
+				26531C9D2C32AD60001B78C2 /* LoadScreen */,
+				26531CA02C32AD7E001B78C2 /* HelloScreen */,
+				26531C932C32ACD1001B78C2 /* TabBar */,
 				26531C8E2C32AAA6001B78C2 /* Resources */,
 			);
 			path = FinancialEducation;
@@ -75,6 +97,70 @@
 				26531C872C32A98A001B78C2 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		26531C932C32ACD1001B78C2 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				26531C7D2C32A987001B78C2 /* MainTabBarController.swift */,
+				26531C942C32ACE0001B78C2 /* Screens */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		26531C942C32ACE0001B78C2 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				26531CA72C32B030001B78C2 /* CoursesScreen */,
+				26531CA82C32B039001B78C2 /* QuizzesScreen */,
+				26531CA92C32B04D001B78C2 /* SettingsScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		26531C9D2C32AD60001B78C2 /* LoadScreen */ = {
+			isa = PBXGroup;
+			children = (
+				26531C8F2C32AC92001B78C2 /* LoadScreen.swift */,
+				26531C9B2C32AD5B001B78C2 /* LoadScreenView.swift */,
+			);
+			path = LoadScreen;
+			sourceTree = "<group>";
+		};
+		26531CA02C32AD7E001B78C2 /* HelloScreen */ = {
+			isa = PBXGroup;
+			children = (
+				26531C912C32ACC6001B78C2 /* HelloScreen.swift */,
+				26531C9E2C32AD75001B78C2 /* HelloScreenView.swift */,
+			);
+			path = HelloScreen;
+			sourceTree = "<group>";
+		};
+		26531CA72C32B030001B78C2 /* CoursesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				26531C952C32ACF1001B78C2 /* CoursesScreen.swift */,
+				26531CA12C32AFB2001B78C2 /* CourseScreenView.swift */,
+			);
+			path = CoursesScreen;
+			sourceTree = "<group>";
+		};
+		26531CA82C32B039001B78C2 /* QuizzesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				26531C972C32AD04001B78C2 /* QuizzesScreen.swift */,
+				26531CA32C32AFC2001B78C2 /* QuizzesScreenView.swift */,
+			);
+			path = QuizzesScreen;
+			sourceTree = "<group>";
+		};
+		26531CA92C32B04D001B78C2 /* SettingsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				26531C992C32AD24001B78C2 /* SettingsScreen.swift */,
+				26531CA52C32AFD0001B78C2 /* SettiongsScreenView.swift */,
+			);
+			path = SettingsScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +232,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26531C7E2C32A987001B78C2 /* ViewController.swift in Sources */,
+				26531CA22C32AFB2001B78C2 /* CourseScreenView.swift in Sources */,
+				26531C9A2C32AD24001B78C2 /* SettingsScreen.swift in Sources */,
+				26531C962C32ACF1001B78C2 /* CoursesScreen.swift in Sources */,
+				26531C7E2C32A987001B78C2 /* MainTabBarController.swift in Sources */,
+				26531CA42C32AFC2001B78C2 /* QuizzesScreenView.swift in Sources */,
+				26531C982C32AD04001B78C2 /* QuizzesScreen.swift in Sources */,
 				26531C7A2C32A987001B78C2 /* AppDelegate.swift in Sources */,
+				26531C922C32ACC6001B78C2 /* HelloScreen.swift in Sources */,
 				26531C7C2C32A987001B78C2 /* SceneDelegate.swift in Sources */,
+				26531CA62C32AFD0001B78C2 /* SettiongsScreenView.swift in Sources */,
+				26531C9C2C32AD5B001B78C2 /* LoadScreenView.swift in Sources */,
+				26531C902C32AC92001B78C2 /* LoadScreen.swift in Sources */,
+				26531C9F2C32AD75001B78C2 /* HelloScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
