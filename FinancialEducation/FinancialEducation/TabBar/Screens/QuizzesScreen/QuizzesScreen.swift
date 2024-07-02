@@ -11,5 +11,6 @@ class QuizzesScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Тесты"
     }
 }
