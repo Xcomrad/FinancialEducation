@@ -1,7 +1,7 @@
 
 import UIKit
 
-class QuizzesScreen: UIViewController {
+final class QuizzesScreen: UIViewController {
     
     private let rootView = QuizzesScreenView()
     
