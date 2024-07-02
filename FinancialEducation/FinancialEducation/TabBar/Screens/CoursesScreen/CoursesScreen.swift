@@ -11,10 +11,15 @@ final class CoursesScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        openDetailCourse()
+    }
+    
+    
+    func openDetailCourse() {
         rootView.completionShowCourseDetail = {
             let controller = DetailCourseScreen()
             self.modalPresentationStyle = .fullScreen
-            self.present(controller, animated: true, completion: nil)
+            self.navigationController?.pushViewController(controller, animated: true)
         }
     }
 }

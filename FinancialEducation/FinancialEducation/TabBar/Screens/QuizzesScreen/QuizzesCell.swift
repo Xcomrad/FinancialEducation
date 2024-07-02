@@ -8,6 +8,7 @@ class QuizzesCell: UITableViewCell {
     private lazy var testImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "fin")
+        imageView.contentMode = .scaleAspectFill
         imageView.layer.cornerRadius = 30
         imageView.clipsToBounds = true
         return imageView
