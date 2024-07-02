@@ -3,28 +3,71 @@ import UIKit
 import SnapKit
 
 final class MainTabBarController: UITabBarController {
+        
+    private let courcesVC: UINavigationController = {
+        let controller = CoursesScreen()
+        let title = "Курсы"
+        let image = UIImage(systemName: "graduationcap.fill")
+        let tag = 0
+        let tabItem = UITabBarItem(title: title, image: image, tag: tag)
+        
+        controller.tabBarItem = tabItem
+        controller.navigationItem.title = "Курсы"
+        controller.navigationItem.largeTitleDisplayMode = .always
+        
+        let navScreen = UINavigationController(rootViewController: controller)
+        navScreen.navigationBar.barStyle = .black
+        navScreen.navigationBar.prefersLargeTitles = true
+        navScreen.navigationBar.isTranslucent = false
+        return navScreen
+    }()
     
-    func setupTabBarScreens() {
+    private let quizzesVC: UINavigationController = {
+        let controller = QuizzesScreen()
+        let title = "Тесты"
+        let image = UIImage(systemName: "checkmark.rectangle.fill")
+        let tag = 1
+        let tabItem = UITabBarItem(title: title, image: image, tag: tag)
         
-        let coursesScreen = CoursesScreen()
-        coursesScreen.tabBarItem = UITabBarItem(title: "Курсы", image: UIImage(systemName: "graduationcap.fill"), tag: 0)
+        controller.tabBarItem = tabItem
+        controller.navigationItem.title = "Tесты"
+        controller.navigationItem.largeTitleDisplayMode = .always
         
-        let quizzesScreen = QuizzesScreen()
-        quizzesScreen.tabBarItem = UITabBarItem(title: "Тесты", image: UIImage(systemName: "checkmark.rectangle.fill") , tag: 1)
+        let navQuizess = UINavigationController(rootViewController: controller)
+        navQuizess.navigationBar.barStyle = .black
+        navQuizess.navigationBar.prefersLargeTitles = true
+        navQuizess.navigationBar.isTranslucent = false
+        return navQuizess
+    }()
+    
+    private let settingsVC: UINavigationController = {
+        let controller = SettingsScreen()
+        let title = "Настройки"
+        let image = UIImage(systemName: "gearshape.fill")
+        let tag = 2
+        let tabItem = UITabBarItem(title: title, image: image, tag: tag)
         
-        let settingsScreen = CoursesScreen()
-        settingsScreen.tabBarItem = UITabBarItem(title: "Настройки", image: UIImage(systemName: "gearshape.fill"), tag: 2)
+        controller.tabBarItem = tabItem
+        controller.navigationItem.title = "Tесты"
+        controller.navigationItem.largeTitleDisplayMode = .always
         
-        viewControllers = [coursesScreen, quizzesScreen, settingsScreen]
-    }
+        let navSettings = UINavigationController(rootViewController: controller)
+        navSettings.navigationBar.barStyle = .black
+        navSettings.navigationBar.prefersLargeTitles = true
+        navSettings.navigationBar.isTranslucent = false
+        return navSettings
+    }()
+        
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupTabBarScreens()
+        viewControllers = [courcesVC, quizzesVC, settingsVC]
         setupStyle()
     }
     
     private func setupStyle() {
+        tabBar.isTranslucent = false
+        tabBar.barTintColor = .darckColor
         tabBar.backgroundColor = .darckColor
         tabBar.tintColor = .tupColor
         tabBar.unselectedItemTintColor = .textColor

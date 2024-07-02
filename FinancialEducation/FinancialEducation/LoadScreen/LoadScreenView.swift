@@ -53,7 +53,7 @@ extension LoadScreenView {
     func setupConstraints() {
         
         circleView.snp.makeConstraints { make in
-            make.top.equalTo(self.safeAreaLayoutGuide).inset(20)
+            make.top.equalTo(self.safeAreaLayoutGuide).inset(100)
             make.leading.trailing.equalTo(self).inset(100)
             make.width.height.equalTo(200)
         }

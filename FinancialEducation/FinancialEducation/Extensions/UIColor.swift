@@ -6,6 +6,7 @@ extension UIColor {
     static let whiteColor = UIColor(hex: "#FFFFFF")
     static let tupColor = UIColor(hex: "#4659FF")
     static let backgroundColor = UIColor(hex: "#01010E")
+    static let borderColor = UIColor(hex: "#C3C3FF")
     static let darckColor = UIColor(hex: "#171320")
     static let textColor = UIColor(hex: "#D7DEE8")
     

@@ -24,6 +24,7 @@
 		26531CAC2C32B813001B78C2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531CAB2C32B813001B78C2 /* UIColor.swift */; };
 		26531CAF2C32BE65001B78C2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 26531CAE2C32BE65001B78C2 /* SnapKit */; };
 		26531CD92C32D4E2001B78C2 /* LoadingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531CD82C32D4E1001B78C2 /* LoadingCircle.swift */; };
+		26CD68372C33D9E900ACDE43 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CD68362C33D9E900ACDE43 /* CourseCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		26531CA52C32AFD0001B78C2 /* SettiongsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettiongsScreenView.swift; sourceTree = "<group>"; };
 		26531CAB2C32B813001B78C2 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		26531CD82C32D4E1001B78C2 /* LoadingCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCircle.swift; sourceTree = "<group>"; };
+		26CD68362C33D9E900ACDE43 /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			children = (
 				26531C952C32ACF1001B78C2 /* CoursesScreen.swift */,
 				26531CA12C32AFB2001B78C2 /* CourseScreenView.swift */,
+				26CD68362C33D9E900ACDE43 /* CourseCell.swift */,
 			);
 			path = CoursesScreen;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				26531C7C2C32A987001B78C2 /* SceneDelegate.swift in Sources */,
 				26531CD92C32D4E2001B78C2 /* LoadingCircle.swift in Sources */,
 				26531CA62C32AFD0001B78C2 /* SettiongsScreenView.swift in Sources */,
+				26CD68372C33D9E900ACDE43 /* CourseCell.swift in Sources */,
 				26531C9C2C32AD5B001B78C2 /* LoadScreenView.swift in Sources */,
 				26531C902C32AC92001B78C2 /* LoadScreen.swift in Sources */,
 				26531C9F2C32AD75001B78C2 /* HelloScreenView.swift in Sources */,
