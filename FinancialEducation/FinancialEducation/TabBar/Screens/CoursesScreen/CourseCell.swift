@@ -9,6 +9,7 @@ class CourseCell: UICollectionViewCell {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "fin")
         imageView.layer.cornerRadius = 30
+        imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         return imageView
     }()
@@ -24,7 +25,7 @@ class CourseCell: UICollectionViewCell {
     
     private lazy var subititleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Базовая база, которую обязан знять каждый, \n чтобы не только сохранить свои деньги, но и приумножить!"
+        label.text = "Базовая база, которую обязан знять каждый, чтобы не только сохранить свои деньги, но и приумножить!"
         label.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         label.textAlignment = .left
         label.numberOfLines = 0
@@ -59,11 +60,11 @@ class CourseCell: UICollectionViewCell {
     func setupConstraints() {
         imageView.snp.makeConstraints { make in
             make.top.leading.trailing.equalTo(self)
-            make.height.equalTo(130)
+            make.height.equalTo(150)
         }
         
         titleLabel.snp.makeConstraints { make in
-            make.top.equalTo(imageView.snp.bottom).inset(-10)
+            make.top.equalTo(imageView.snp.bottom).inset(-5)
             make.leading.trailing.equalTo(self).inset(20)
         }
         
