@@ -32,11 +32,6 @@ class CourseCell: UICollectionViewCell {
         return label
     }()
     
-    private lazy var continueButton: UIButton = {
-        let button = UIButton()
-        return button
-    }()
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -59,7 +54,6 @@ class CourseCell: UICollectionViewCell {
         addSubview(imageView)
         addSubview(titleLabel)
         addSubview(subititleLabel)
-        addSubview(continueButton)
     }
     
     func setupConstraints() {
