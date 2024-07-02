@@ -26,6 +26,10 @@
 		26531CD92C32D4E2001B78C2 /* LoadingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531CD82C32D4E1001B78C2 /* LoadingCircle.swift */; };
 		26CD68372C33D9E900ACDE43 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CD68362C33D9E900ACDE43 /* CourseCell.swift */; };
 		26CD68392C33FA7400ACDE43 /* QuizzesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CD68382C33FA7400ACDE43 /* QuizzesCell.swift */; };
+		26CD683C2C341D6300ACDE43 /* DetailCourseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CD683B2C341D6300ACDE43 /* DetailCourseScreen.swift */; };
+		26CD683E2C341D8D00ACDE43 /* DetailCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CD683D2C341D8D00ACDE43 /* DetailCourseView.swift */; };
+		26CD68412C3420BA00ACDE43 /* DetailQuizzeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CD68402C3420BA00ACDE43 /* DetailQuizzeScreen.swift */; };
+		26CD68432C3420DA00ACDE43 /* DetailQuizzeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CD68422C3420DA00ACDE43 /* DetailQuizzeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +53,10 @@
 		26531CD82C32D4E1001B78C2 /* LoadingCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCircle.swift; sourceTree = "<group>"; };
 		26CD68362C33D9E900ACDE43 /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		26CD68382C33FA7400ACDE43 /* QuizzesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzesCell.swift; sourceTree = "<group>"; };
+		26CD683B2C341D6300ACDE43 /* DetailCourseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCourseScreen.swift; sourceTree = "<group>"; };
+		26CD683D2C341D8D00ACDE43 /* DetailCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCourseView.swift; sourceTree = "<group>"; };
+		26CD68402C3420BA00ACDE43 /* DetailQuizzeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailQuizzeScreen.swift; sourceTree = "<group>"; };
+		26CD68422C3420DA00ACDE43 /* DetailQuizzeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailQuizzeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +163,7 @@
 				26531C952C32ACF1001B78C2 /* CoursesScreen.swift */,
 				26531CA12C32AFB2001B78C2 /* CourseScreenView.swift */,
 				26CD68362C33D9E900ACDE43 /* CourseCell.swift */,
+				26CD683A2C341D4300ACDE43 /* DetailCourseSsreen */,
 			);
 			path = CoursesScreen;
 			sourceTree = "<group>";
@@ -165,6 +174,7 @@
 				26531C972C32AD04001B78C2 /* QuizzesScreen.swift */,
 				26531CA32C32AFC2001B78C2 /* QuizzesScreenView.swift */,
 				26CD68382C33FA7400ACDE43 /* QuizzesCell.swift */,
+				26CD683F2C34209F00ACDE43 /* DetailQuizzeScreen */,
 			);
 			path = QuizzesScreen;
 			sourceTree = "<group>";
@@ -199,6 +209,24 @@
 			children = (
 			);
 			path = State;
+			sourceTree = "<group>";
+		};
+		26CD683A2C341D4300ACDE43 /* DetailCourseSsreen */ = {
+			isa = PBXGroup;
+			children = (
+				26CD683B2C341D6300ACDE43 /* DetailCourseScreen.swift */,
+				26CD683D2C341D8D00ACDE43 /* DetailCourseView.swift */,
+			);
+			path = DetailCourseSsreen;
+			sourceTree = "<group>";
+		};
+		26CD683F2C34209F00ACDE43 /* DetailQuizzeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				26CD68402C3420BA00ACDE43 /* DetailQuizzeScreen.swift */,
+				26CD68422C3420DA00ACDE43 /* DetailQuizzeView.swift */,
+			);
+			path = DetailQuizzeScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,10 +306,12 @@
 			files = (
 				26531CA22C32AFB2001B78C2 /* CourseScreenView.swift in Sources */,
 				26531CAC2C32B813001B78C2 /* UIColor.swift in Sources */,
+				26CD68412C3420BA00ACDE43 /* DetailQuizzeScreen.swift in Sources */,
 				26531C9A2C32AD24001B78C2 /* SettingsScreen.swift in Sources */,
 				26531C962C32ACF1001B78C2 /* CoursesScreen.swift in Sources */,
 				26531C7E2C32A987001B78C2 /* MainTabBarController.swift in Sources */,
 				26CD68392C33FA7400ACDE43 /* QuizzesCell.swift in Sources */,
+				26CD683E2C341D8D00ACDE43 /* DetailCourseView.swift in Sources */,
 				26531CA42C32AFC2001B78C2 /* QuizzesScreenView.swift in Sources */,
 				26531C982C32AD04001B78C2 /* QuizzesScreen.swift in Sources */,
 				26531C7A2C32A987001B78C2 /* AppDelegate.swift in Sources */,
@@ -291,7 +321,9 @@
 				26531CA62C32AFD0001B78C2 /* SettiongsScreenView.swift in Sources */,
 				26CD68372C33D9E900ACDE43 /* CourseCell.swift in Sources */,
 				26531C9C2C32AD5B001B78C2 /* LoadScreenView.swift in Sources */,
+				26CD683C2C341D6300ACDE43 /* DetailCourseScreen.swift in Sources */,
 				26531C902C32AC92001B78C2 /* LoadScreen.swift in Sources */,
+				26CD68432C3420DA00ACDE43 /* DetailQuizzeView.swift in Sources */,
 				26531C9F2C32AD75001B78C2 /* HelloScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,7 +1,9 @@
 
 import UIKit
 
-final class CoursesScreenView: UIView {
+ class CoursesScreenView: UIView {
+    
+    var completionShowCourseDetail: (()->())?
     
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -61,5 +63,9 @@ extension CoursesScreenView: UICollectionViewDataSource, UICollectionViewDelegat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CourseCell.reuseId, for: indexPath) as! CourseCell
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        completionShowCourseDetail?()
     }
 }

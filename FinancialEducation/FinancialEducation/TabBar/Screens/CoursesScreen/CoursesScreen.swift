@@ -1,7 +1,7 @@
 
 import UIKit
 
-class CoursesScreen: UIViewController {
+final class CoursesScreen: UIViewController {
     
     private let rootView = CoursesScreenView()
     
@@ -11,6 +11,10 @@ class CoursesScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        rootView.completionShowCourseDetail = {
+            let controller = DetailCourseScreen()
+            self.modalPresentationStyle = .fullScreen
+            self.present(controller, animated: true, completion: nil)
+        }
     }
 }
