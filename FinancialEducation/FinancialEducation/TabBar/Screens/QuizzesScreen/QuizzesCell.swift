@@ -6,24 +6,14 @@ class QuizzesCell: UITableViewCell {
     static let reuseId = "QuizzesCell"
     
     private lazy var testImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.image = UIImage(named: "fin")
+        let imageView = RoundedImageView()
         imageView.contentMode = .scaleAspectFill
-        imageView.layer.cornerRadius = 30
         imageView.clipsToBounds = true
         return imageView
     }()
     
-    private let verticalSackView: UIStackView = {
-       let stack = UIStackView()
-        stack.axis = .vertical
-        stack.spacing = 5
-        return stack
-    }()
-    
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "10 вопросов"
         label.font = UIFont.systemFont(ofSize: 12, weight: .thin)
         label.textAlignment = .left
         label.textColor = .white
@@ -33,7 +23,7 @@ class QuizzesCell: UITableViewCell {
     private lazy var subititleLabel: UILabel = {
         let label = UILabel()
         label.text = "Проверим базовые знания"
-        label.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+        label.font = UIFont.systemFont(ofSize: 15, weight: .bold)
         label.textAlignment = .left
         label.numberOfLines = 0
         label.textColor = .textColor
@@ -46,7 +36,6 @@ class QuizzesCell: UITableViewCell {
         let arrowImage = UIImage(systemName: "arrow.right.circle", withConfiguration: largeConfig)
         button.setImage(arrowImage, for: .normal)
         button.tintColor = .tupColor
-        button.addTarget(self, action: #selector(showDetailTest), for: .touchUpInside)
         return button
     }()
     
@@ -61,9 +50,11 @@ class QuizzesCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    //MARK: - Action
-    @objc func showDetailTest() {
-        
+    //MARK: - Update
+    func update(_ quize: QuizModel) {
+        testImageView.image = UIImage(named: "\(quize.image)")
+        titleLabel.text = "\(quize.questions.count) вопросов"
+        subititleLabel.text = quize.title
     }
 }
 
@@ -72,8 +63,8 @@ class QuizzesCell: UITableViewCell {
 extension QuizzesCell {
     
     func setup() {
-        backgroundColor = .darckColor
-        layer.cornerRadius = 30
+        backgroundColor = .darkColor
+        layer.cornerRadius = 20
         layer.borderWidth = 0.5
         layer.borderColor = UIColor.borderColor.cgColor
     }
@@ -81,28 +72,33 @@ extension QuizzesCell {
     func setupViews() {
         addSubview(testImageView)
         addSubview(titleLabel)
-        
-        addSubview(verticalSackView)
-        verticalSackView.addArrangedSubview(titleLabel)
-        verticalSackView.addArrangedSubview(subititleLabel)
-        
+        addSubview(subititleLabel)
         addSubview(continueButton)
     }
     
     func setupConstraints() {
         testImageView.snp.makeConstraints { make in
             make.leading.top.bottom.equalTo(self)
-            make.height.width.equalTo(100)
+            make.height.equalTo(100)
+            make.width.equalTo(150)
         }
         
-        verticalSackView.snp.makeConstraints { make in
+        titleLabel.snp.makeConstraints { make in
+            make.top.equalTo(self).inset(10)
             make.leading.equalTo(testImageView.snp.trailing).inset(-10)
-            make.width.equalTo(200)
-            make.top.bottom.equalTo(self).inset(10)
+            make.trailing.equalTo(continueButton.snp.leading).inset(200)
         }
+        
+        subititleLabel.snp.makeConstraints { make in
+            make.top.equalTo(titleLabel.snp.bottom).inset(-10)
+            make.leading.equalTo(testImageView.snp.trailing).inset(-10)
+            make.width.equalTo(170)
+        }
+        
         
         continueButton.snp.makeConstraints { make in
             make.trailing.top.bottom.equalTo(self).inset(10)
         }
     }
 }
+

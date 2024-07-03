@@ -7,8 +7,8 @@ class CourseCell: UICollectionViewCell {
     
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "fin")
-        imageView.layer.cornerRadius = 30
+        imageView.image = UIImage(named: "econ")
+        imageView.layer.cornerRadius = 20
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         return imageView
@@ -45,10 +45,10 @@ class CourseCell: UICollectionViewCell {
     }
     
     func setup() {
-        backgroundColor = .darckColor
+        backgroundColor = .darkColor
         layer.borderWidth = 1
         layer.borderColor = UIColor.borderColor.cgColor
-        layer.cornerRadius = 30
+        layer.cornerRadius = 20
     }
     
     func setupViews() {

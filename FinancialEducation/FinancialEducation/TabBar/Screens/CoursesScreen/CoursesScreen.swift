@@ -16,6 +16,7 @@ final class CoursesScreen: UIViewController {
     
     
     func openDetailCourse() {
+        //MARK: - Action
         rootView.completionShowCourseDetail = {
             let controller = DetailCourseScreen()
             self.modalPresentationStyle = .fullScreen

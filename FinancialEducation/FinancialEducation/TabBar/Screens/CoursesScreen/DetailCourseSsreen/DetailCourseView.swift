@@ -22,7 +22,7 @@ class DetailCourseView: UIView {
         imageView.heightAnchor.constraint(equalToConstant: 200).isActive = true
         imageView.widthAnchor.constraint(equalToConstant: 200).isActive = true
         imageView.contentMode = .scaleAspectFill
-        imageView.layer.cornerRadius = 30
+        imageView.layer.cornerRadius = 20
         imageView.layer.borderColor = UIColor.borderColor.cgColor
         imageView.layer.borderWidth = 0.5
         imageView.clipsToBounds = true
@@ -68,8 +68,8 @@ class DetailCourseView: UIView {
 extension DetailCourseView {
     
     func setup() {
-        backgroundColor = .darckColor
-        layer.cornerRadius = 30
+        backgroundColor = .darkColor
+        layer.cornerRadius = 20
     }
     
     func setupViews() {
