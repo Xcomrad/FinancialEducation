@@ -7,7 +7,7 @@ extension UIColor {
     static let tupColor = UIColor(hex: "#4659FF")
     static let backgroundColor = UIColor(hex: "#01010E")
     static let borderColor = UIColor(hex: "#C3C3FF")
-    static let darckColor = UIColor(hex: "#171320")
+    static let darkColor = UIColor(hex: "#171320")
     static let textColor = UIColor(hex: "#D7DEE8")
     
     // init for HEX

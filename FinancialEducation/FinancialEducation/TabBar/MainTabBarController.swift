@@ -67,13 +67,13 @@ final class MainTabBarController: UITabBarController {
     
     private func setupStyle() {
         tabBar.isTranslucent = false
-        tabBar.barTintColor = .darckColor
-        tabBar.backgroundColor = .darckColor
+        tabBar.barTintColor = .darkColor
+        tabBar.backgroundColor = .darkColor
         tabBar.tintColor = .tupColor
         tabBar.unselectedItemTintColor = .textColor
         tabBar.layer.borderWidth = 1
         tabBar.layer.cornerRadius = 20
-        tabBar.layer.borderColor = UIColor.darckColor.cgColor
+        tabBar.layer.borderColor = UIColor.darkColor.cgColor
         tabBar.clipsToBounds = true
     }
 }
