@@ -1,9 +1,11 @@
 
 import UIKit
 
- class CoursesScreenView: UIView {
+class CoursesScreenView: UIView {
     
-    var completionShowCourseDetail: (()->())?
+    var onSelectedCourse: ((Course)->())?
+    
+    private var courses: [Course] = []
     
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -31,6 +33,11 @@ import UIKit
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    //MARK: - Update
+    func update(_ data: [Course]) {
+        courses = data
+    }
 }
 
 
@@ -56,16 +63,23 @@ extension CoursesScreenView {
 
 extension CoursesScreenView: UICollectionViewDataSource, UICollectionViewDelegate {
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        
+        let course = courses[indexPath.row]
+        let detailVC = DetailCourseScreen()
+        detailVC.currentCourse = course
+        onSelectedCourse?(course)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return courses.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CourseCell.reuseId, for: indexPath) as! CourseCell
+        let data = courses[indexPath.row]
+        cell.update(data)
         return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        completionShowCourseDetail?()
     }
 }
