@@ -33,7 +33,7 @@ class QuizzesCell: UITableViewCell {
     private lazy var continueButton: UIButton = {
         let button = UIButton(type: .system)
         let largeConfig = UIImage.SymbolConfiguration(pointSize: 40, weight: .thin, scale: .medium)
-        let arrowImage = UIImage(systemName: "arrow.right.circle", withConfiguration: largeConfig)
+        let arrowImage = UIImage(systemName: "arrowshape.forward", withConfiguration: largeConfig)
         button.setImage(arrowImage, for: .normal)
         button.tintColor = .tupColor
         return button

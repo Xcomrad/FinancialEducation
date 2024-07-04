@@ -32,6 +32,7 @@
 		26FCDB552C35938700F98571 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FCDB542C35938700F98571 /* Course.swift */; };
 		26FCDB582C35954800F98571 /* CoursesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FCDB572C35954800F98571 /* CoursesManager.swift */; };
 		26FCDB902C36AFEA00F98571 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FCDB8F2C36AFEA00F98571 /* DetailView.swift */; };
+		26FCDB932C36E61100F98571 /* ClouseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FCDB922C36E61100F98571 /* ClouseButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		26FCDB542C35938700F98571 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		26FCDB572C35954800F98571 /* CoursesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesManager.swift; sourceTree = "<group>"; };
 		26FCDB8F2C36AFEA00F98571 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		26FCDB922C36E61100F98571 /* ClouseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClouseButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 			children = (
 				26CD683B2C341D6300ACDE43 /* DetailCourseVC.swift */,
 				26FCDB8F2C36AFEA00F98571 /* DetailView.swift */,
+				26FCDB912C36E5FE00F98571 /* SubView */,
 			);
 			path = DetailCourseScreen;
 			sourceTree = "<group>";
@@ -241,6 +244,14 @@
 				26FCDB572C35954800F98571 /* CoursesManager.swift */,
 			);
 			path = Workers;
+			sourceTree = "<group>";
+		};
+		26FCDB912C36E5FE00F98571 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				26FCDB922C36E61100F98571 /* ClouseButton.swift */,
+			);
+			path = SubView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +341,7 @@
 				26CD68392C33FA7400ACDE43 /* QuizzesCell.swift in Sources */,
 				26531C982C32AD04001B78C2 /* QuizzesScreen.swift in Sources */,
 				26531C7A2C32A987001B78C2 /* AppDelegate.swift in Sources */,
+				26FCDB932C36E61100F98571 /* ClouseButton.swift in Sources */,
 				26531C922C32ACC6001B78C2 /* HelloScreen.swift in Sources */,
 				26531C7C2C32A987001B78C2 /* SceneDelegate.swift in Sources */,
 				26531CD92C32D4E2001B78C2 /* LoadingCircle.swift in Sources */,

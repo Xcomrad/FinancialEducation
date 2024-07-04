@@ -16,6 +16,10 @@ final class DetailCourseVC: UIViewController {
         setup()
         update()
         
+        rootView.dismissButton.onCloseDetail = {
+            self.dismiss(animated: true)
+        }
+        
     }
     
     //MARK: - Update
