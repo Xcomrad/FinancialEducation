@@ -32,6 +32,9 @@
 		26FCDB532C35935200F98571 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 26FCDB522C35935200F98571 /* SnapKit */; };
 		26FCDB552C35938700F98571 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FCDB542C35938700F98571 /* Course.swift */; };
 		26FCDB582C35954800F98571 /* CoursesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FCDB572C35954800F98571 /* CoursesManager.swift */; };
+		26FCDB5B2C36753800F98571 /* CourseImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FCDB5A2C36753800F98571 /* CourseImageCell.swift */; };
+		26FCDB5D2C36755000F98571 /* CourseTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FCDB5C2C36755000F98571 /* CourseTitleCell.swift */; };
+		26FCDB5F2C36756200F98571 /* CourseDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FCDB5E2C36756200F98571 /* CourseDescriptionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +64,9 @@
 		26FCDB462C35775700F98571 /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
 		26FCDB542C35938700F98571 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		26FCDB572C35954800F98571 /* CoursesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesManager.swift; sourceTree = "<group>"; };
+		26FCDB5A2C36753800F98571 /* CourseImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseImageCell.swift; sourceTree = "<group>"; };
+		26FCDB5C2C36755000F98571 /* CourseTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTitleCell.swift; sourceTree = "<group>"; };
+		26FCDB5E2C36756200F98571 /* CourseDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDescriptionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,7 +174,7 @@
 				26531C952C32ACF1001B78C2 /* CoursesScreen.swift */,
 				26531CA12C32AFB2001B78C2 /* CourseScreenView.swift */,
 				26CD68362C33D9E900ACDE43 /* CourseCell.swift */,
-				26CD683A2C341D4300ACDE43 /* DetailCourseSsreen */,
+				26CD683A2C341D4300ACDE43 /* DetailCourseScreen */,
 			);
 			path = CoursesScreen;
 			sourceTree = "<group>";
@@ -209,13 +215,14 @@
 			path = Animate;
 			sourceTree = "<group>";
 		};
-		26CD683A2C341D4300ACDE43 /* DetailCourseSsreen */ = {
+		26CD683A2C341D4300ACDE43 /* DetailCourseScreen */ = {
 			isa = PBXGroup;
 			children = (
 				26CD683B2C341D6300ACDE43 /* DetailCourseScreen.swift */,
 				26CD683D2C341D8D00ACDE43 /* DetailCourseView.swift */,
+				26FCDB592C36752600F98571 /* Views */,
 			);
-			path = DetailCourseSsreen;
+			path = DetailCourseScreen;
 			sourceTree = "<group>";
 		};
 		26CD683F2C34209F00ACDE43 /* DetailQuizzeScreen */ = {
@@ -241,6 +248,16 @@
 				26FCDB572C35954800F98571 /* CoursesManager.swift */,
 			);
 			path = Workers;
+			sourceTree = "<group>";
+		};
+		26FCDB592C36752600F98571 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				26FCDB5A2C36753800F98571 /* CourseImageCell.swift */,
+				26FCDB5C2C36755000F98571 /* CourseTitleCell.swift */,
+				26FCDB5E2C36756200F98571 /* CourseDescriptionCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,7 +342,10 @@
 				26CD68412C3420BA00ACDE43 /* DetailQuizzeScreen.swift in Sources */,
 				26531C9A2C32AD24001B78C2 /* SettingsScreen.swift in Sources */,
 				26531C962C32ACF1001B78C2 /* CoursesScreen.swift in Sources */,
+				26FCDB5D2C36755000F98571 /* CourseTitleCell.swift in Sources */,
+				26FCDB5B2C36753800F98571 /* CourseImageCell.swift in Sources */,
 				26531C7E2C32A987001B78C2 /* MainTabBarController.swift in Sources */,
+				26FCDB5F2C36756200F98571 /* CourseDescriptionCell.swift in Sources */,
 				26CD68392C33FA7400ACDE43 /* QuizzesCell.swift in Sources */,
 				26CD683E2C341D8D00ACDE43 /* DetailCourseView.swift in Sources */,
 				26531C982C32AD04001B78C2 /* QuizzesScreen.swift in Sources */,

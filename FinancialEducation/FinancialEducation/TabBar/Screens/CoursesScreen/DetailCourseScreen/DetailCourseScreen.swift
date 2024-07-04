@@ -3,7 +3,7 @@ import UIKit
 
 final class DetailCourseScreen: UIViewController {
     
-    var currentCourse: Course?
+    var selectedCourse: Course?
     
     private let rootView = DetailCourseView()
     
@@ -18,6 +18,6 @@ final class DetailCourseScreen: UIViewController {
     
     //MARK: - Public
     func update() {
-        rootView.update(currentCourse!)
+        rootView.update(selectedCourse!)
     }
 }

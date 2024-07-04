@@ -30,7 +30,7 @@ final class CoursesScreen: UIViewController {
     //MARK: - Action
     func openDetailCourse(_ selectedCourse: Course) {
             let controller = DetailCourseScreen()
-            controller.currentCourse = selectedCourse
+            controller.selectedCourse = selectedCourse
             controller.modalPresentationStyle = .fullScreen
             self.navigationController?.pushViewController(controller, animated: true)
  
