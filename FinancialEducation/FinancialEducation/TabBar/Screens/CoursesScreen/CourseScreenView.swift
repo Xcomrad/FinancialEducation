@@ -37,6 +37,7 @@ class CoursesScreenView: UIView {
     //MARK: - Update
     func update(_ data: [Course]) {
         courses = data
+        collectionView.reloadData()
     }
 }
 
@@ -64,7 +65,6 @@ extension CoursesScreenView {
 extension CoursesScreenView: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //collectionView.deselectItem(at: indexPath, animated: true)
         let course = courses[indexPath.row]
         onSelectedCourse?(course)
     }

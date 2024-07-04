@@ -5,7 +5,7 @@ import SnapKit
 final class MainTabBarController: UITabBarController {
         
     private let courcesVC: UINavigationController = {
-        let controller = CoursesScreen()
+        let controller = CourseScreenVC()
         let title = "Курсы"
         let image = UIImage(systemName: "graduationcap.fill")
         let tag = 0
