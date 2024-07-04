@@ -3,6 +3,8 @@ import UIKit
 
 class DetailView: UIView {
     
+    let dismissButton = ClouseButton()
+    
     private lazy var scrollView: UIScrollView = {
         let scroll = UIScrollView()
         return scroll
@@ -75,6 +77,7 @@ extension DetailView {
     func setupView() {
         addSubview(scrollView)
         scrollView.addSubview(verticalStackView)
+        scrollView.addSubview(dismissButton)
         
         verticalStackView.addArrangedSubview(courseImageView)
         verticalStackView.addArrangedSubview(titleLabel)
@@ -102,6 +105,10 @@ extension DetailView {
         
         descriptionLabel.snp.makeConstraints { make in
             make.leading.trailing.equalTo(verticalStackView).inset(10)
+        }
+        
+        dismissButton.snp.makeConstraints { make in
+            make.top.right.equalTo(verticalStackView).inset(20)
         }
     }
 }

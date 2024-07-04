@@ -33,6 +33,6 @@ final class CourseScreenVC: UIViewController {
         let controller = DetailCourseVC()
         controller.currentCourse = selectedCourse
         modalPresentationStyle = .fullScreen
-        navigationController?.pushViewController(controller, animated: true)
+        self.present(controller, animated: true)
     }
 }
