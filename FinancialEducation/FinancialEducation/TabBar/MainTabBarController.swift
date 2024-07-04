@@ -23,7 +23,7 @@ final class MainTabBarController: UITabBarController {
     }()
     
     private let quizzesVC: UINavigationController = {
-        let controller = QuizzesScreen()
+        let controller = QuizzesScreenVC()
         let title = "Тесты"
         let image = UIImage(systemName: "checkmark.rectangle.fill")
         let tag = 1

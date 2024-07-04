@@ -1,10 +1,11 @@
 
-import UIKit
+import Foundation
 
-final class QuizzesScreen: UITableViewController {
+class QuizeQuestionManager {
     
-    var quizzes: [QuizModel] = [
-        QuizModel(image: "econ", title: "Умеете ли вы экономить?", questions: [
+    var quizzes: [Quiz] = [
+        
+        Quiz(image: "econ", title: "Умеете ли вы экономить?", questions: [
             QuizQuestion(question: "На рынке 1 килограмм хорошей черники продавался по 5$ за килограмм, но 3 килограмма черники можно было купить по 4$ за килограмм. Артем решил купить три килограмма. Из-за жары один килограмм черники испортился, и Артему пришлось его выкинуть, остальное он съел. По какой цене за килограмм в итоге досталась Артему съеденная черника?",
                          answers: ["4$", "5$", "6$", "3$"],
                          correctAnswer: "6$"),
@@ -27,7 +28,7 @@ final class QuizzesScreen: UITableViewController {
                          answers: ["Выгоднее продать самому", "Выгоднее обратиться в агенство", "Это будет стоить одинаково", "Не продавать"],
                          correctAnswer: "Выгоднее обратиться в агенство")
         ]),
-        QuizModel(image: "plan", title: "Что вы знаете о финансовом планировании?", questions: [
+        Quiz(image: "plan", title: "Что вы знаете о финансовом планировании?", questions: [
             QuizQuestion(question: "Стратегия достижения финансовых целей человека с максимально эффективным использованием имеющихся финансовых инструментов исходя из финансового состояния – это:",
                          answers: ["Личный финансовый план", "Моделирование покуп. способности", "Инвестиционный план", "Инвестиционная стратегия"],
                          correctAnswer: "Личный финансовый план"),
@@ -50,7 +51,7 @@ final class QuizzesScreen: UITableViewController {
                          answers: ["12", "15", "18", "14"],
                          correctAnswer: "14"),
         ]),
-        QuizModel(image: "inf", title: "Что такое инфляция?", questions: [
+        Quiz(image: "inf", title: "Что такое инфляция?", questions: [
             QuizQuestion(question: "Общий рост потребительских цен за определенный промежуток времени – это:", answers: ["Рост покупательской способности", "Инфляция", "Дефляция", "Дефолт"],
                          correctAnswer: "Инфляция"),
             QuizQuestion(question: "Основной целью монетарной политики любого банка является последовательное снижение...",
@@ -66,7 +67,7 @@ final class QuizzesScreen: UITableViewController {
                          answers: ["Повысить ставку рефенансирования", "Понизить ставку рефенансирования", "Повысить требования к банкам", "Привлечь инвестиции"],
                          correctAnswer: "Понизить ставку рефенансирования"),
         ]),
-        QuizModel(image: "income", title: "Доходы и расходы", questions: [
+        Quiz(image: "income", title: "Доходы и расходы", questions: [
             QuizQuestion(question: "От какого из перечисленных видов расходов можно отказаться в случае необходимости?",
                          answers: ["Комунальные платежи", "Поход в кино", "Уплата налогов", "Расходы на еду"],
                          correctAnswer: "Поход в кино"),
@@ -97,37 +98,7 @@ final class QuizzesScreen: UITableViewController {
         ])
     ]
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setupTableView()
-    }
-    
-    private func setupTableView() {
-        tableView.backgroundColor = .backgroundColor
-        tableView.layer.cornerRadius = 20
-        tableView.register(QuizzesCell.self, forCellReuseIdentifier: QuizzesCell.reuseId)
-    }
-}
-
-
-
-extension QuizzesScreen {
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return quizzes.count
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: QuizzesCell.reuseId, for: indexPath) as! QuizzesCell
-        let data = quizzes[indexPath.row]
-        cell.update(data)
-        cell.selectionStyle = .none
-        return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let quizVC = DetailQuizzeScreen()
-        quizVC.quiz = quizzes[indexPath.row]
-        navigationController?.pushViewController(quizVC, animated: true)
+    func fetchQuizQuestion() -> [Quiz] {
+        return quizzes
     }
 }

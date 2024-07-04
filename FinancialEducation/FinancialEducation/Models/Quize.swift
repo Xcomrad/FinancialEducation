@@ -1,7 +1,7 @@
 
 import Foundation
 
-struct QuizModel {
+struct Quiz {
     let image: String
     let title: String
     let questions: [QuizQuestion]

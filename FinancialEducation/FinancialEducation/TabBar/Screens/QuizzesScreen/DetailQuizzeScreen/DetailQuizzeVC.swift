@@ -1,9 +1,9 @@
 
 import UIKit
 
-final class DetailQuizzeScreen: UIViewController {
+final class DetailQuizzeVC: UIViewController {
     
-    var quiz: QuizModel?
+    var quiz: Quiz?
     
     var currentQuestionIndex = 0
     var correctAnswersCount = 0
@@ -91,7 +91,7 @@ final class DetailQuizzeScreen: UIViewController {
 
 
 
-extension DetailQuizzeScreen {
+extension DetailQuizzeVC {
     
     func setup() {
         view.backgroundColor = .backgroundColor

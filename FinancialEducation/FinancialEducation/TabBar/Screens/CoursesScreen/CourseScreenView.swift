@@ -37,7 +37,6 @@ class CoursesScreenView: UIView {
     //MARK: - Update
     func update(_ data: [Course]) {
         courses = data
-        collectionView.reloadData()
     }
 }
 
