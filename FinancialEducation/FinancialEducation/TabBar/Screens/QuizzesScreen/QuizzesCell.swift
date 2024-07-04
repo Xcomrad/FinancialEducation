@@ -51,7 +51,7 @@ class QuizzesCell: UITableViewCell {
     }
     
     //MARK: - Update
-    func update(_ quize: QuizModel) {
+    func update(_ quize: Quiz) {
         testImageView.image = UIImage(named: "\(quize.image)")
         titleLabel.text = "\(quize.questions.count) вопросов"
         subititleLabel.text = quize.title
