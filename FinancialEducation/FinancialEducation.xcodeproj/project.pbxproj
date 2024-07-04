@@ -21,7 +21,6 @@
 		26531CA22C32AFB2001B78C2 /* CourseScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531CA12C32AFB2001B78C2 /* CourseScreenView.swift */; };
 		26531CA62C32AFD0001B78C2 /* SettiongsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531CA52C32AFD0001B78C2 /* SettiongsScreenView.swift */; };
 		26531CAC2C32B813001B78C2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531CAB2C32B813001B78C2 /* UIColor.swift */; };
-		26531CAF2C32BE65001B78C2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 26531CAE2C32BE65001B78C2 /* SnapKit */; };
 		26531CD92C32D4E2001B78C2 /* LoadingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26531CD82C32D4E1001B78C2 /* LoadingCircle.swift */; };
 		26CD68372C33D9E900ACDE43 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CD68362C33D9E900ACDE43 /* CourseCell.swift */; };
 		26CD68392C33FA7400ACDE43 /* QuizzesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CD68382C33FA7400ACDE43 /* QuizzesCell.swift */; };
@@ -30,6 +29,9 @@
 		26CD68412C3420BA00ACDE43 /* DetailQuizzeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CD68402C3420BA00ACDE43 /* DetailQuizzeScreen.swift */; };
 		26FCDB432C3520BA00F98571 /* QuizeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FCDB422C3520BA00F98571 /* QuizeModel.swift */; };
 		26FCDB472C35775700F98571 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FCDB462C35775700F98571 /* RoundedImageView.swift */; };
+		26FCDB532C35935200F98571 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 26FCDB522C35935200F98571 /* SnapKit */; };
+		26FCDB552C35938700F98571 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FCDB542C35938700F98571 /* Course.swift */; };
+		26FCDB582C35954800F98571 /* CoursesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FCDB572C35954800F98571 /* CoursesManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,8 @@
 		26CD68402C3420BA00ACDE43 /* DetailQuizzeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailQuizzeScreen.swift; sourceTree = "<group>"; };
 		26FCDB422C3520BA00F98571 /* QuizeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizeModel.swift; sourceTree = "<group>"; };
 		26FCDB462C35775700F98571 /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		26FCDB542C35938700F98571 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		26FCDB572C35954800F98571 /* CoursesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26531CAF2C32BE65001B78C2 /* SnapKit in Frameworks */,
+				26FCDB532C35935200F98571 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +99,7 @@
 				26531C9D2C32AD60001B78C2 /* LoadScreen */,
 				26531CA02C32AD7E001B78C2 /* HelloScreen */,
 				26531C932C32ACD1001B78C2 /* TabBar */,
+				26FCDB562C35951D00F98571 /* Workers */,
 				26531CDA2C32E198001B78C2 /* Animate */,
 				26531CAA2C32B7FB001B78C2 /* Extensions */,
 				26531C8E2C32AAA6001B78C2 /* Resources */,
@@ -225,8 +230,17 @@
 			isa = PBXGroup;
 			children = (
 				26FCDB422C3520BA00F98571 /* QuizeModel.swift */,
+				26FCDB542C35938700F98571 /* Course.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		26FCDB562C35951D00F98571 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				26FCDB572C35954800F98571 /* CoursesManager.swift */,
+			);
+			path = Workers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,7 +260,7 @@
 			);
 			name = FinancialEducation;
 			packageProductDependencies = (
-				26531CAE2C32BE65001B78C2 /* SnapKit */,
+				26FCDB522C35935200F98571 /* SnapKit */,
 			);
 			productName = FinancialEducation;
 			productReference = 26531C762C32A987001B78C2 /* FinancialEducation.app */;
@@ -277,7 +291,7 @@
 			);
 			mainGroup = 26531C6D2C32A987001B78C2;
 			packageReferences = (
-				26531CAD2C32BE65001B78C2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				26FCDB512C35935200F98571 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 26531C772C32A987001B78C2 /* Products */;
 			projectDirPath = "";
@@ -304,6 +318,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26FCDB582C35954800F98571 /* CoursesManager.swift in Sources */,
+				26FCDB552C35938700F98571 /* Course.swift in Sources */,
 				26531CA22C32AFB2001B78C2 /* CourseScreenView.swift in Sources */,
 				26531CAC2C32B813001B78C2 /* UIColor.swift in Sources */,
 				26CD68412C3420BA00ACDE43 /* DetailQuizzeScreen.swift in Sources */,
@@ -528,7 +544,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		26531CAD2C32BE65001B78C2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		26FCDB512C35935200F98571 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -539,9 +555,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		26531CAE2C32BE65001B78C2 /* SnapKit */ = {
+		26FCDB522C35935200F98571 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 26531CAD2C32BE65001B78C2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 26FCDB512C35935200F98571 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
