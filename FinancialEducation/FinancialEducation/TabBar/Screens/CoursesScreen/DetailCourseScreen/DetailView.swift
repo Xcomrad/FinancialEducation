@@ -69,12 +69,12 @@ class DetailView: UIView {
 
 extension DetailView {
     
-    func setup() {
+    private func setup() {
         backgroundColor = .darkColor
         layer.cornerRadius = 20
     }
     
-    func setupView() {
+    private func setupView() {
         addSubview(scrollView)
         scrollView.addSubview(verticalStackView)
         scrollView.addSubview(dismissButton)
@@ -84,7 +84,7 @@ extension DetailView {
         verticalStackView.addArrangedSubview(descriptionLabel)
     }
     
-    func setupConstraints() {
+    private func setupConstraints() {
         scrollView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
             make.width.equalToSuperview()

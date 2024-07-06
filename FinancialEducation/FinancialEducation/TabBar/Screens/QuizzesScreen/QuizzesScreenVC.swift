@@ -23,18 +23,18 @@ final class QuizzesScreenVC: UIViewController {
         }
     }
     
-    func fetchQuizzes() {
+    private func fetchQuizzes() {
         quizzes = dataManager.fetchQuizQuestion()
     }
     
     //MARK: - Update
-    func update() {
+    private func update() {
         rootView.update(quizzes)
     }
     
     //MARK: - Action
-    func openQuize(_ currentQuize: Quiz) {
-        let controller = DetailQuizzeVC()
+    private func openQuize(_ currentQuize: Quiz) {
+        let controller = DetailQuizVC()
         controller.quiz = currentQuize
         navigationController?.pushViewController(controller, animated: true)
     }

@@ -62,21 +62,21 @@ class QuizzesCell: UITableViewCell {
 
 extension QuizzesCell {
     
-    func setup() {
+    private func setup() {
         backgroundColor = .darkColor
         layer.cornerRadius = 20
         layer.borderWidth = 0.5
         layer.borderColor = UIColor.borderColor.cgColor
     }
     
-    func setupViews() {
+    private func setupViews() {
         addSubview(testImageView)
         addSubview(titleLabel)
         addSubview(subititleLabel)
         addSubview(continueButton)
     }
     
-    func setupConstraints() {
+    private func setupConstraints() {
         testImageView.snp.makeConstraints { make in
             make.leading.top.bottom.equalTo(self)
             make.height.equalTo(100)
