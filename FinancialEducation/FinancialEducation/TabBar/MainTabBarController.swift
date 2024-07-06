@@ -40,11 +40,29 @@ final class MainTabBarController: UITabBarController {
         return navQuizess
     }()
     
+    private let quotesVC: UINavigationController = {
+        let controller = QuotesScreenVC()
+        let title = "Цитаты"
+        let image = UIImage(systemName: "book.closed.fill")
+        let tag = 2
+        let tabItem = UITabBarItem(title: title, image: image, tag: tag)
+        
+        controller.tabBarItem = tabItem
+        controller.navigationItem.title = "Цитаты"
+        controller.navigationItem.largeTitleDisplayMode = .always
+        
+        let navSettings = UINavigationController(rootViewController: controller)
+        navSettings.navigationBar.barStyle = .black
+        navSettings.navigationBar.prefersLargeTitles = true
+        navSettings.navigationBar.isTranslucent = false
+        return navSettings
+    }()
+    
     private let settingsVC: UINavigationController = {
         let controller = SettingsScreen()
         let title = "Настройки"
         let image = UIImage(systemName: "gearshape.fill")
-        let tag = 2
+        let tag = 3
         let tabItem = UITabBarItem(title: title, image: image, tag: tag)
         
         controller.tabBarItem = tabItem
@@ -61,7 +79,7 @@ final class MainTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewControllers = [courcesVC, quizzesVC, settingsVC]
+        viewControllers = [courcesVC, quizzesVC, quotesVC, settingsVC]
         setupStyle()
     }
     
