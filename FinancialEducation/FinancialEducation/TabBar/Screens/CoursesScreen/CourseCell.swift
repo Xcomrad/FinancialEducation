@@ -55,20 +55,20 @@ class CourseCell: UICollectionViewCell {
 
 extension CourseCell {
     
-    func setup() {
+    private func setup() {
         backgroundColor = .darkColor
         layer.borderWidth = 1
         layer.borderColor = UIColor.borderColor.cgColor
         layer.cornerRadius = 20
     }
     
-    func setupViews() {
+    private func setupViews() {
         addSubview(courseImageView)
         addSubview(titleLabel)
         addSubview(subititleLabel)
     }
     
-    func setupConstraints() {
+    private func setupConstraints() {
     
         courseImageView.snp.makeConstraints { make in
             make.top.leading.trailing.equalTo(self)

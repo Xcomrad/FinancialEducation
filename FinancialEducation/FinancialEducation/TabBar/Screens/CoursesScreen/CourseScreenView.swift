@@ -44,15 +44,15 @@ class CoursesScreenView: UIView {
 
 extension CoursesScreenView {
     
-    func setup() {
+    private func setup() {
         backgroundColor = .backgroundColor
     }
     
-    func setupViews() {
+    private func setupViews() {
         addSubview(collectionView)
     }
     
-    func setupConstraints() {
+    private func setupConstraints() {
         collectionView.snp.makeConstraints { make in
             make.edges.equalTo(self.safeAreaLayoutGuide)
         }

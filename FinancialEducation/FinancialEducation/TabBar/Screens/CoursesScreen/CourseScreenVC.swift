@@ -24,12 +24,12 @@ final class CourseScreenVC: UIViewController {
 
     }
     
-    func fetchCourses() {
+    private func fetchCourses() {
         courses = courseManager.fetchCourses()
     }
     
     //MARK: - Action
-    func openDetail(_ selectedCourse: Course) {
+    private func openDetail(_ selectedCourse: Course) {
         let controller = DetailCourseVC()
         controller.currentCourse = selectedCourse
         modalPresentationStyle = .fullScreen

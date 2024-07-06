@@ -23,11 +23,11 @@ final class DetailCourseVC: UIViewController {
     }
     
     //MARK: - Update
-    func update() {
+    private func update() {
         rootView.update(currentCourse!)
     }
     
-    func setup() {
+    private func setup() {
         title = "Теория"
     }
 }
